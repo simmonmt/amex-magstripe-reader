@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>Get Card Swipe Test Page</title>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="GetCardSwipe.js"></script>
+	
+	<style>
+	#cc_num {
+		font-size: 50px;
+	}
+	
+	#cc_exp {
+		font-size: 50px;
+	}
+	</style>
+  </head>
+  <body>
+	<input type="text" id="cc_num" readonly></input>
+	
+	<div id="cc_exp">
+		<span id="cc_exp_month"></span> / <span id="cc_exp_year"></span>
+	</div>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        addListeners();
+      });
+    </script>
+
+  </body>
+</html>
